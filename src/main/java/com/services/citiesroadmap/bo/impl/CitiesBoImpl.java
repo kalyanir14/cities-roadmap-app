@@ -9,9 +9,10 @@ public class CitiesBoImpl implements CitiesBo {
     @Autowired
     private RoadMapAPIAdapter roadMapAPIAdapter;
 
+    String filePath = "classpath:city.txt";
     @Override
     public String getCitiesConnected(CitiesRequest request){
-        String isConnected =  roadMapAPIAdapter.getCitiesConnected(request);
+        String isConnected =  roadMapAPIAdapter.getCitiesConnected(request, filePath);
         return isConnected;
     }
 }
