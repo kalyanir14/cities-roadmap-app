@@ -27,9 +27,18 @@ public class RoadMapAPIAdapterTest {
     public void tearDown() {
         roadMapAPIAdapter = null;}
     @Test
-    public void getCitiesConnected() throws Exception {
+    public void getCitiesConnected_happypath() throws Exception {
         CitiesRequest request = MockData.buildCitiesRequest();
         String response= roadMapAPIAdapter.getCitiesConnected(request, "classpath:city.txt");
         assertNotNull(response);
+        assertEquals("Yes", "Yes");
+    }
+
+    @Test
+    public void getCitiesConnected() throws Exception {
+        CitiesRequest request = MockData.buildNoCitiesRequest();
+        String response= roadMapAPIAdapter.getCitiesConnected(request, "classpath:city.txt");
+        assertNotNull(response);
+        assertEquals("No", "No");
     }
 }
