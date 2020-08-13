@@ -14,13 +14,13 @@ import java.util.StringTokenizer;
 
 @Component
 public class RoadMapAPIAdapter {
-    public String getCitiesConnected(CitiesRequest request){
+    public String getCitiesConnected(CitiesRequest request, String filePath){
         String isRoadsConnected = "No";
         File file = null;
         String content = null;
         Set<String> uniqueCities = new HashSet<>();
         try {
-            file = ResourceUtils.getFile("classpath:city.txt");
+            file = ResourceUtils.getFile(filePath);
             content = new String(Files.readAllBytes(file.toPath()));
             String delimiter = "\n\t,.;";
             StringTokenizer st = new StringTokenizer(content, delimiter);
