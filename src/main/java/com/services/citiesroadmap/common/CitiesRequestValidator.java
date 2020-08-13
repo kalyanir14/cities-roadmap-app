@@ -1,11 +1,11 @@
 package com.services.citiesroadmap.common;
 
 import com.services.citiesroadmap.bo.request.CitiesQuery;
-import org.springframework.util.StringUtils;
+import org.apache.logging.log4j.core.util.Assert;
 
 public class CitiesRequestValidator {
     public static void validateCitiesRequest(CitiesQuery query){
-        AssertionError(StringUtils.isEmpty(query.getOrigin()));
-        AssertionError(StringUtils.isEmpty(query.getDestination()));
+        Assert.isEmpty(query.getOrigin());
+        Assert.isEmpty(query.getDestination());
     }
-}
+
