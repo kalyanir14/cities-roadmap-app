@@ -3,12 +3,15 @@ This project allows customers view roadmap available between two given cities or
 
 **Description:**
 
-
 **Get Cities Connected**
 
 Required query parameters:
 * origin
 * destination
+
+**Plugin Integartions**
+- Integrated Swagger
+- Jacoco plugin integration
 
 **Technology Stack:**
   - Java 8/ Spring Boot / Rest Easy
