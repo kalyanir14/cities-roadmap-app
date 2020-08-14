@@ -1,7 +1,7 @@
 package com.services.citiesroadmap.controller;
 
-import com.services.citiesroadmap.bo.model.CitiesRequest;
-import com.services.citiesroadmap.bo.request.CitiesQuery;
+import com.services.citiesroadmap.service.model.CitiesRequest;
+import com.services.citiesroadmap.service.request.CitiesQuery;
 import com.services.citiesroadmap.controller.transformer.ControllerRequestTransformer;
 import org.junit.Test;
 
