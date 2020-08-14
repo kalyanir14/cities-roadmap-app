@@ -1,7 +1,7 @@
 package com.services.citiesroadmap.testUtils;
 
-import com.services.citiesroadmap.bo.model.CitiesRequest;
-import com.services.citiesroadmap.bo.request.CitiesQuery;
+import com.services.citiesroadmap.service.model.CitiesRequest;
+import com.services.citiesroadmap.service.request.CitiesQuery;
 
 public class MockData {
 
